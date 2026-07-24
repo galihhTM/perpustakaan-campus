@@ -15,6 +15,7 @@ Aplikasi manajemen perpustakaan berbasis Laravel untuk mengelola proses administ
 ## Persyaratan
 
 - PHP 8.2+
+- Laravel 12+
 - Composer
 - Node.js & npm
 
