@@ -77,7 +77,7 @@
                                 
                                 <!-- Kolom Kategori -->
                                 <td class="px-6 py-4 whitespace-nowrap">
-                                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold">
+                                    <span class="px-2.5 py-1 text-blue-700 rounded-full text-xs font-semibold">
                                         {{ $book->category->name }}
                                     </span>
                                 </td>
@@ -85,7 +85,7 @@
                                 <!-- Kolom Stok -->
                                 <td class="px-6 py-4 text-center whitespace-nowrap">
                                     @if($book->stock > 0)
-                                        <span class="px-2 py-1 bg-emerald-50 text-emerald-700 rounded font-bold text-xs">
+                                        <span class="px-2 py-1 text-emerald-700 rounded font-bold text-xs">
                                             {{ $book->stock }} Eks
                                         </span>
                                     @else

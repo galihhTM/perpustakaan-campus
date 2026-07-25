@@ -77,7 +77,7 @@
                     <!-- Input Gambar Cover -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700">Cover Buku (Opsional)</label>
-                        <input type="file" name="cover" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 {{ $errors->has('cover') ? 'border-dashed border-red-500 rounded-md' : '' }}">
+                        <input type="file" name="cover" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-700 hover:file:bg-blue-100 {{ $errors->has('cover') ? 'border-dashed border-red-500 rounded-md' : '' }}">
                         <p class="text-xs text-gray-400 mt-1">Format: JPG, JPEG, PNG. Maksimal 2MB.</p>
                         @error('cover') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
                     </div>

@@ -86,7 +86,7 @@
                         </div>
                         @endif
 
-                        <input type="file" name="cover" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 @error('cover') border-red-500 @enderror">
+                        <input type="file" name="cover" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-700 hover:file:bg-blue-100 @error('cover') border-red-500 @enderror">
                         <p class="text-xs text-gray-400">Pilih file baru hanya jika Anda ingin mengganti cover yang lama. Maksimal 2MB.</p>
                         @error('cover') <p class="text-red-500 text-xs mt-1">{{ $message }}</p> @enderror
                     </div>

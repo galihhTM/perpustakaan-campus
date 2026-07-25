@@ -46,14 +46,14 @@
 
                 <!-- 2. MENU KHUSUS STAFF / PETUGAS (Hanya muncul jika Role = Staff atau Admin) -->
                 @if(auth()->user()->role === 'staff' || auth()->user()->role === 'admin')
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6 border-l-4 border-emerald-500">
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6 border-l-4 border-[#f5c906]">
                     <h3 class="font-bold text-gray-800 text-lg mb-3">Transaksi Peminjaman</h3>
                     <p class="text-gray-650 text-sm mb-4">Kelola transaksi peminjaman, pengembalian buku, serta pembaruan data stok fisik.</p>
                     <div class="space-y-2">
-                        <a href="{{ route('loans.create') }}" class="block text-center bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold py-2 px-4 rounded transition">
+                        <a href="{{ route('loans.create') }}" class="block text-center bg-[#eeb007] hover:bg-[#f5c906] text-white text-sm font-semibold py-2 px-4 rounded transition">
                             Catat Peminjaman Baru
                         </a>
-                        <a href="{{ route('loans.index') }}" class="block text-center bg-gray-150 hover:bg-gray-200 text-gray-700 text-sm font-semibold py-2 px-4 rounded transition">
+                        <a href="{{ route('loans.index') }}" class="block text-center bg-[#e7e419] hover:bg-[#f5c906] text-white text-sm font-semibold py-2 px-4 rounded transition">
                             Kelola Pengembalian
                         </a>
                         <!-- <a href="{{ route('books.create') }}" class="block text-center bg-gray-150 hover:bg-gray-200 text-gray-700 text-sm font-semibold py-2 px-4 rounded transition">
@@ -65,11 +65,11 @@
 
                 <!-- 3. MENU KHUSUS ADMINISTRATOR (Hanya muncul jika Role = Admin) -->
                 @if(auth()->user()->role === 'admin')
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6 border-l-4 border-amber-500">
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6 border-l-4 border-[#969595]">
                     <h3 class="font-bold text-gray-800 text-lg mb-3">Pengaturan Administrator</h3>
                     <p class="text-gray-650 text-sm mb-4">Akses penuh untuk integrasi data tingkat lanjut, manajemen kualitas data, dan arsip dokumen.</p>
                     <div class="space-y-2">
-                        <a href="{{ route('members.import.form') }}" class="block text-center bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold py-2 px-4 rounded transition">
+                        <a href="{{ route('members.import.form') }}" class="block text-center bg-[#02850d] hover:bg-[#1d5b1d] text-white text-sm font-semibold py-2 px-4 rounded transition">
                             Impor Data Anggota (CSV)
                         </a>
                         @if(auth()->user()->role === 'admin')
@@ -77,7 +77,7 @@
                             Kelola Semua Anggota
                         </a>
                         @endif
-                        <a href="{{ route('documents.index') }}" class="block text-center bg-gray-150 hover:bg-gray-200 text-gray-700 text-sm font-semibold py-2 px-4 rounded transition">
+                        <a href="{{ route('documents.index') }}" class="block text-center bg-[#717271] hover:bg-[#969595] text-white text-sm font-semibold py-2 px-4 rounded transition">
                             Metadata & Dokumen Digital
                         </a>
                         <a href="{{ route('settings.backup') }}" class="block text-center bg-red-600 hover:bg-red-700 text-white text-sm font-semibold py-2 px-4 rounded transition">
